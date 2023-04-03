@@ -27,7 +27,9 @@ const Services = () => {
           justifyContent: "center",
         }}
       >
-        <Box component="h4">
+        <Box sx={{
+          fontSize: {xs: ".8rem"}, fontWeight: {xs: "bold", lg:"bold"}
+        }}>
           {item}
         </Box>
         
@@ -40,7 +42,7 @@ const Services = () => {
       sx={{
         backgroundColor: "#11244f",
         height: "30%",
-        width: "90%",
+        width: "100%",
         borderRadius: "1rem",
         borderStyle: "solid",
         borderWidth: "1px",
@@ -55,7 +57,7 @@ const Services = () => {
         sx={{
           backgroundColor: "#4d6294",
           height: "90%",
-          width: "90%",
+          width: "95%",
           borderRadius: "1rem",
           display: "grid",
           gridTemplateColumns: "repeat(2, 50%)",

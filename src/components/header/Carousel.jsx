@@ -20,6 +20,7 @@ const Carousel = () => {
 
   return (
       <AliceCarousel
+        disableDotsControls
         mouseTracking
         infinite
         autoPlayInterval={1000}

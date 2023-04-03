@@ -32,14 +32,14 @@ nav a.active {
     color: var(--color-white);
 }
 
-/*----------MEDIUM-------------*/
-@media screen and (max-width: 1024px) {
+/* ----------MEDIUM------------- */
+/* @media screen and (max-width: 1024px) {
 
   }
-  
+   */
   /*--------SMALL-------------*/
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     nav {
         display: none;
     }
-  }
+  } */
