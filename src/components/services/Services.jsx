@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/material";
+import Title from "../Titles/Title";
 
 const Services = () => {
   const projects = [
@@ -103,15 +104,16 @@ const Services = () => {
             }}
           >
             <Box
-            sx={{
-              height: "10%",
-              width: "100%",
-              // backgroundColor: "yellow",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-            }}>
+              sx={{
+                height: "10%",
+                width: "100%",
+                // backgroundColor: "yellow",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
               {item.title}
             </Box>
             <Box
@@ -147,25 +149,47 @@ const Services = () => {
         justifyContent: "center",
       }}
     >
-      Services
+      <Box
+        sx={{
+          height: "10%",
+          width: "100%",
+          // backgroundColor: "blue",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center"
+        }}
+      >
+        <Title titleName="Services"/>
+      </Box>
       <Box
         sx={{
           height: "90%",
-          width: "90%",
-          background: "rgb(8,13,42)",
-          //background: "linear-gradient(90deg, rgba(8,13,42,1) 0%, rgba(43,64,78,1) 50%, rgba(8,13,42,1) 100%)",
-          borderStyle: "solid",
-          borderColor: "blue",
-          borderWidth: "thin",
-          borderRadius: "1rem",
-          display: "grid",
-          gridTemplateColumns: "repeat(4,50%)",
-          gridTemplateRows: "repeat(2,50%)",
-          overflowX: "scroll",
-          overflowY: "hidden",
+          width: "100%",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        {projectCards}
+        <Box
+          sx={{
+            height: "85%",
+            width: "90%",
+            background: "rgb(8,13,42)",
+            //background: "linear-gradient(90deg, rgba(8,13,42,1) 0%, rgba(43,64,78,1) 50%, rgba(8,13,42,1) 100%)",
+            borderStyle: "solid",
+            borderColor: "blue",
+            borderWidth: "thin",
+            borderRadius: "1rem",
+            display: "grid",
+            gridTemplateColumns: {xs: "repeat(8,100%)", md: "repeat(4,50%)"},
+            gridTemplateRows: {xs: "repeat(1,100%)", md: "repeat(2,50%)"},
+            overflowX: "scroll",
+            overflowY: "hidden",
+          }}
+        >
+          {projectCards}
+        </Box>
       </Box>
     </Box>
   );

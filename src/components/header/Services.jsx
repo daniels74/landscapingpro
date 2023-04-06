@@ -41,8 +41,8 @@ const Services = () => {
     <Box
       sx={{
         backgroundColor: "#11244f",
-        height: "30%",
-        width: "100%",
+        height: "25%",
+        width: "90%",
         borderRadius: "1rem",
         borderStyle: "solid",
         borderWidth: "1px",
@@ -55,7 +55,7 @@ const Services = () => {
     >
       <Box
         sx={{
-          backgroundColor: "#4d6294",
+          backgroundColor: "#00498d",
           height: "90%",
           width: "95%",
           borderRadius: "1rem",

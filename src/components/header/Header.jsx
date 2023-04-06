@@ -5,10 +5,10 @@ import Services from "./Services";
 import RecentProjectsCarousel from "./RecentProjectsCarousel";
 
 import "./Header.css";
+import Title from "../Titles/Title";
 
 //-----------------UI
 import { Box } from "@mui/material";
-import Title from "./Title";
 
 const Header = () => {
   return (
@@ -22,70 +22,63 @@ const Header = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-around",
       }}
     >
       <Box
         sx={{
-          position: "relative",
-          height: "85%",
+          height: "10%",
           width: "100%",
+          // backgroundColor: "yellow",
           display: "flex",
-          flexDirection: "column",
+          flexDirection: "row",
           alignItems: "center",
-          justifyContent: "space-around",
-          overflow: "hidden",
-          // backgroundColor: "blue"
+          justifyContent: "center",
         }}
       >
-        <Title />
+        <Title titleName="Land Pros"/>
+      </Box>
+
+      <Box
+        sx={{
+          height: "90%",
+          width: "100%",
+          // backgroundColor: "red",
+        }}
+      >
         <Box
           sx={{
-            height: "90%",
-            width: "90%",
+            height: "80%",
+            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-around",
+            // background: "rgb(8,13,42)",
           }}
         >
           <Box
-            sx={{
-              // position: "relative",
-              // top: "2rem",
-              height: "70%",
-              width: "100%",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "space-around",
-              // background: "rgb(8,13,42)",
-              // background: "linear-gradient(90deg, rgba(8,13,42,1) 0%, rgba(43,64,78,1) 50%, rgba(8,13,42,1) 100%)",
-              // borderRadius: "1rem",
-              // borderStyle: "solid",
-              // borderWidth: ".2px",
-              // borderColor: "blue",
-            }}
-          >
-            <Box
-              component={Services}
-              sx={{
-                height: "40%",
-                width: "100%",
-                backgroundColor: "yellow",
-              }}
-            />
-            <Box
-              component={RecentProjectsCarousel}
-              sx={{
-                position: "relative",
-                height: "40%",
-                width: "100%",
-                backgroundColor: "yellow",
-              }}
-            ></Box>
-            {/* <CTA /> */}
-            <HeaderSocials />
-            <a href="#contact" className="scroll__down">
-              Scroll Down
-            </a>
-          </Box>
+            component={Services}
+            // sx={{
+            //   height: "40%",
+            //   width: "100%",
+            //   backgroundColor: "yellow",
+            // }}
+          />
+          <Box
+            component={RecentProjectsCarousel}
+            // sx={{
+            //   position: "relative",
+            //   height: "60%",
+            //   width: "100%",
+            //   backgroundColor: "yellow",
+            // }}
+          ></Box>
+          {/* <CTA /> */}
+          <HeaderSocials />
+          {/* <a href="#contact" className="scroll__down">
+            Scroll Down
+          </a> */}
         </Box>
       </Box>
     </Box>
